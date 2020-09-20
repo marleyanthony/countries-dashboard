@@ -1,0 +1,28 @@
+.header {
+  color: $dark-mode-text;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.875rem 1rem;
+  background: #2B3844;
+  height: 80px;
+
+  &__where {
+    font-weight: 800;
+    font-size: $home-font-size;
+    margin: 0;
+  }
+
+  &__dark-mode-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__dark-mode-text {
+    font-size: $home-font-size; 
+    margin: 0;
+  }
+
+  &__dark-mode-text-moon {
+    margin-right: 0.5rem;
+  }
+}
