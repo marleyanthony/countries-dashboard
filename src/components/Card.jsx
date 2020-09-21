@@ -41,7 +41,7 @@ class Card extends Component {
         <section className="filter">
           <div className="filter__filter-wrapper">
             <input type="text" className="filter__search-bar" placeholder="Search for a country..." onChange={this.handleInputChange} />
-            <select name="region" className="filter__region-filter">
+            <select name="region" className="filter__region-filter" onChange={this.handleInputChange}>
               <option value="default" className="filter__region-option">Filter by Region</option>
               <option value="Africa">Africa</option>
               <option value="America">America</option>
