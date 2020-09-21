@@ -1,0 +1,28 @@
+.filter {
+  padding: 0 1rem;
+
+  &__filter-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__search-bar {
+    margin: 1.5rem 0 2.5rem;
+    width: 80%;
+    @include search-filter-style;
+    
+    &::-webkit-input-placeholder {
+      color: $dark-mode-text;
+    }
+  }
+
+  &__region-filter {
+    @include search-filter-style;
+    max-width: 200px;
+    // appearance: none;
+  }
+
+  &__region-option {
+    color: $dark-mode-text;
+  }
+}
