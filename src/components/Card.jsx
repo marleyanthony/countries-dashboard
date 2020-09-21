@@ -14,10 +14,21 @@ class Card extends Component {
           countryData.map((country) => (
             <li className="countries__card">
               <img src={country.flag} alt="flag" className="countries__flag" />
-              <h4 className="countries__name">{country.name}</h4>
-              <h5 className="countries__pop">{country.population}</h5>
-              <h5 className="countries__region">{country.region}</h5>
-              <h5 className="countries__capital">{country.capital}</h5>
+              <div className="countries__content-wrapper">
+                <h4 className="countries__name">{country.name}</h4>
+                <h5 className="countries__pop">
+                  <span className="countries__label">Population: </span>
+                  {country.population}
+                </h5>
+                <h5 className="countries__region">
+                  <span className="countries__label">Region: </span>
+                  {country.region}
+                </h5>
+                <h5 className="countries__capital">
+                  <span className="countries__label">Capital: </span>
+                  {country.capital}
+                </h5>
+              </div>
             </li>
           ))
         }

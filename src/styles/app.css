@@ -86,4 +86,56 @@ body {
 .filter__region-option {
   color: white;
 }
+
+.countries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+.countries__card {
+  width: 16.5rem;
+  background: #2B3844;
+  color: white;
+  border-radius: 5px;
+  list-style: none;
+  margin-top: 2.5rem;
+}
+
+.countries__flag {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.countries__content-wrapper {
+  padding: 1.5rem 1.5rem 2.875rem;
+}
+
+.countries__name, .countries__pop, .countries__region, .countries__capital {
+  margin: 0;
+}
+
+.countries__pop, .countries__region, .countries__capital {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.countries__label {
+  font-weight: 600;
+}
+
+.countries__name {
+  font-weight: 800;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
 /*# sourceMappingURL=app.css.map */
