@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import Header from './components/Header';
-import Filter from './components/Filter';
 import Card from './components/Card';
 
 class App extends Component {
@@ -28,7 +27,6 @@ class App extends Component {
     return (
       <>
         <Header />
-        <Filter />
         <Card countriesData={this.state.countriesData} />
       </>
     );
