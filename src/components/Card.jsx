@@ -52,11 +52,13 @@ class Card extends Component {
           </div>
         </section>
 
-        <ul className="countries">
+        <div className="countries">
           {
             countryData.map((country) => (
-              <li className="countries__card">
-                <img src={country.flag} alt="flag" className="countries__flag" />
+              <div className="countries__card">
+                <div className="countries__flag-wrapper">
+                  <img src={country.flag} alt="flag" className="countries__flag" />
+                </div>
                 <div className="countries__content-wrapper">
                   <h4 className="countries__name">{country.name}</h4>
                   <h5 className="countries__pop">
@@ -72,10 +74,10 @@ class Card extends Component {
                     {country.capital}
                   </h5>
                 </div>
-              </li>
+              </div>
             ))
           }
-        </ul>
+        </div>
       </>
     )
   }

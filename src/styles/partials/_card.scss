@@ -4,17 +4,39 @@
   align-items: center;
   padding: 0;
 
+  @include tablet {
+    flex-direction: unset;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__card {
-    width: 16.5rem;
+    width: 16.6875rem;
+    height: 21rem;
     background: $dark-mode-secondary-bg;
     color: $dark-mode-text;
     border-radius: 5px;
     list-style: none;
     margin-top: 2.5rem;
+
+    @include tablet {
+      margin-right: 2.34375rem;
+      margin-left: 2.34375rem;
+    }
+  }
+
+  &__flag-wrapper {
+    // height: 16.5rem;
+    // width: 10rem;
+    width: 267px;
+    height: 160px;
   }
 
   &__flag {
-    width: 100%;
+    // min-width: 100%;
+    width: 267px;
+    height: 160px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }

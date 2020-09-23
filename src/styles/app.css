@@ -62,6 +62,22 @@ body {
           flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .filter__filter-wrapper {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 3rem 2.5rem 0;
+  }
+}
+
 .filter__search-bar {
   margin: 1.5rem 0 2.5rem;
   width: 80%;
@@ -69,6 +85,13 @@ body {
   background: #2B3844;
   border-radius: 5px;
   border: none;
+}
+
+@media (min-width: 768px) {
+  .filter__search-bar {
+    width: 30%;
+    margin: 0;
+  }
 }
 
 .filter__search-bar::-webkit-input-placeholder {
@@ -101,8 +124,26 @@ body {
   padding: 0;
 }
 
+@media (min-width: 768px) {
+  .countries {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .countries__card {
-  width: 16.5rem;
+  width: 16.6875rem;
+  height: 21rem;
   background: #2B3844;
   color: white;
   border-radius: 5px;
@@ -110,8 +151,21 @@ body {
   margin-top: 2.5rem;
 }
 
+@media (min-width: 768px) {
+  .countries__card {
+    margin-right: 2.34375rem;
+    margin-left: 2.34375rem;
+  }
+}
+
+.countries__flag-wrapper {
+  width: 267px;
+  height: 160px;
+}
+
 .countries__flag {
-  width: 100%;
+  width: 267px;
+  height: 160px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }

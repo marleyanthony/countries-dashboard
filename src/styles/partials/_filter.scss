@@ -4,12 +4,23 @@
   &__filter-wrapper {
     display: flex;
     flex-direction: column;
+
+    @include tablet {
+      flex-direction: unset;
+      align-items: center;
+      justify-content: space-between;
+      margin: 3rem 2.5rem 0;
+    }
   }
 
   &__search-bar {
     margin: 1.5rem 0 2.5rem;
     width: 80%;
     @include search-filter-style;
+    @include tablet {
+      width: 30%;
+      margin: 0;
+    }
     
     &::-webkit-input-placeholder {
       color: $dark-mode-text;
